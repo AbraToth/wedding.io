@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Wedding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #FAFAFA;
+            --text-main: #333333;
+            --accent: #8A9A86; /* A soft sage green */
+            --light-border: #E0E0E0;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            border-bottom: 1px solid var(--light-border);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--accent);
+        }
+
+        /* Details Section */
+        .section {
+            padding: 60px 0;
+            border-bottom: 1px solid var(--light-border);
+        }
+
+        .section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            color: var(--accent);
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .location-card {
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid var(--light-border);
+            border-radius: 8px;
+        }
+
+        /* FAQ Section */
+        details {
+            background: #fff;
+            padding: 15px 20px;
+            border: 1px solid var(--light-border);
+            border-radius: 5px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        summary {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            outline: none;
+        }
+
+        details p {
+            margin-top: 15px;
+            padding-left: 10px;
+            border-left: 2px solid var(--accent);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Name & Name</h1>
+        <p>August 2026 • Budapest, Hungary</p>
+    </header>
+
+    <main class="container">
+        
+        <section class="section" id="details">
+            <h2>The Details</h2>
+            <div class="grid-2">
+                <div class="location-card">
+                    <h3>The Ceremony</h3>
+                    <p><strong>Time:</strong> 15:00</p>
+                    <p><strong>Location:</strong> Beautiful Venue Name<br>Budapest, District Number</p>
+                </div>
+                <div class="location-card">
+                    <h3>The Reception</h3>
+                    <p><strong>Time:</strong> 17:30</p>
+                    <p><strong>Location:</strong> Amazing Restaurant Name<br>Budapest, District Number</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="faq">
+            <h2>Frequently Asked Questions</h2>
+            
+            <details>
+                <summary>Is there a dress code?</summary>
+                <p>We’d love to see our family and friends get dressed up for our big day! The dress code is semi-formal.</p>
+            </details>
+
+            <details>
+                <summary>How do I RSVP?</summary>
+                <p>Please send us an email at wedding@example.com or reach out to us directly by [Date].</p>
+            </details>
+
+            <details>
+                <summary>Is there parking available?</summary>
+                <p>Yes, there is free parking available directly behind the reception venue.</p>
+            </details>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
